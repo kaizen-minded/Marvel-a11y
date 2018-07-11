@@ -1,0 +1,172 @@
+html, body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    background-image: url("https://dyn0.media.forbiddenplanet.com/products/122f82d4c6154f5a3dbf392998d8d2ac4c2a8172.jpg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: bottom right;
+    color: white; 
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+h2{
+  font-size: 3em;
+}
+
+h3 {
+    font-size: 150%;
+    }
+
+
+header {
+  background-color: red;
+}
+
+header h1 {
+  line-height: 1;
+  color: white;
+  font-size: 200%;
+}
+
+h3.feedback-wrong{
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+h3.feedback-correct span{
+  color:green;
+}
+h3.feedback-wrong span {
+    color: red;
+}
+
+h4.feedback-wrong{
+  margin: 0;
+}
+
+form{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+ }
+
+#marvelQuiz{
+    position: relative;
+    top: 25px;
+    font-size: 150%;
+    padding: 10px;
+    margin: 30px auto;
+ }
+
+#question-score{
+    font-size: 105%;
+}
+
+#response-page h1 {
+  font-size: 175%;
+  margin: 0 auto;
+  padding-top: 15%;
+}
+
+
+legend{
+    display: block;
+    position: relative;
+    top: 5px;  
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+fieldset{
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+}
+img{
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+}
+
+label{
+    display: block;
+    margin-top: 10%;
+    font-size: 150%;
+    text-align: left;
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+
+[type="submit"], [type="button"]{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+    color: red;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 15% auto;
+}
+
+input[type="radio"]{
+  margin: 5px 10px;
+}
+
+.hidden{
+  display: none;
+}
+
+.score-card, .question-card{
+  display: inline-block;
+  width: 50%;
+  font-size: 1.5em;
+}
+
+.score-card{
+  float: right;
+  text-align: right; 
+}
+
+.question-card{
+  float: left;
+  text-align: left; 
+}
+
+#right-answer{
+  font-size: 1.4em;
+}
+
+@media only screen and (min-width: 640px){
+
+body{
+  font-size: 175%;
+}
+form{
+    width: 100%;
+    margin-top: 5px;
+ }
+ fieldset{
+  border: none;
+  width: 100%;
+  margin: 10px auto;
+}
+
+
+[type="submit"], [type="button"] {
+  width: 70%;
+
+ }
+}

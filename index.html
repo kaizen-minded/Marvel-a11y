@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MARVEL QUIZ</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/float-grid.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header role="banner">
+    <div class="row">
+      <div class="col-12">
+        <h1>MARVEL QUIZ</h1>
+      </div>
+    </div>
+  </header>
+<main class="row" role="content">
+  <div class="col-12">
+ 
+   <div id="start-page">
+      <h2> Avengers Assemble</h2>
+      <h4> To test your knowlegde of the Marvel universe with a quiz. Press tab and Enter to start or click the start button</h4>   
+
+      <input type="button" name="Here we go" value="START" id="start-the-quiz">
+
+    </div>
+  </div>
+
+    <div  class="col-12">
+      <div id="question-score" class="hidden">
+       <div class="question-card">
+          Question <span class= "question">1</span>
+        </div>
+        <div class="score-card">
+          Score <span class="score">0</span>/10
+        </div> 
+        <p id="marvelQuiz"></p>
+      </div>
+    </div>
+
+    <div class="col-6">
+    <form id="quiz-page" class="hidden" role="form" >
+    <fieldset >
+      <legend> 
+        Choose the best answer 
+      </legend>
+      
+          <label for="answerA">
+            <input type="radio" name="Marvel" value="A" id="answerA" required><span></span>
+          </label>
+          <label for="answerB">
+            <input type="radio" name="Marvel" value="B" id="answerB" ><span></span>
+          </label>
+          <label for="answerC">
+            <input type="radio" name="Marvel" value="C" id="answerC" ><span></span>
+          </label>
+          <label for="answerD">
+            <input type="radio" name="Marvel" value="D" id="answerD" ><span></span>
+          </label>
+        <input type="submit" name="Choose Answer" class="submit-answer">
+    </fieldset>
+      </form>
+
+    <div id="response-page" class="hidden">
+      <h3 class="feedback-correct hidden">You got it <span>RIGHT</span></h3>
+      <h3 class="feedback-wrong hidden">You got it <span>WRONG</span></h3>
+      <h4 class="feedback-wrong hidden">The correct answer was <span id="right-answer">Superhero</span> </h4>
+
+      <img src="http://gifimage.net/wp-content/uploads/2017/10/marvel-gif-11.gif" class="feedback-correct hidden" alt="Gif of Thor nodding head screaming yes">
+      <img src="https://media0.giphy.com/media/xUOxf4774N2mHtWiLS/giphy.gif" class="feedback-wrong hidden" alt="Gif of the punisher rubbing and shaking his head">
+
+      <input type="button" value="Next" id="next-question">
+    </div>
+
+    <div id="report-page" class="hidden">
+      <h1>You scored <span class="score">0</span>/10!!!</h1>
+      <h3 class="perfect-score hidden">Perfect</h3>
+      <img src="http://i0.kym-cdn.com/photos/images/original/000/843/717/917.jpg" class="perfect-score hidden" alt="Piccolo screaming NERD">
+      <h3 class="great-score hidden">Awesome, you can almost taste perfection</h3>
+      <img src="https://media1.tenor.com/images/5e267b2905df3378f3189ce9e6ff97a7/tenor.gif?itemid=5097010" class="great-score hidden" alt="Gif of Deadpool gasping">
+      <h3 class="good-score hidden">That was pretty good, one more time</h3>
+      <img src="https://media1.tenor.com/images/3f94c67aa94eb0f281042e2b13d5d655/tenor.gif?itemid=5391563" class="good-score hidden" alt="Gif of young Steve Rogers saying he can do this all day">
+      <h3 class="ok-score hidden">Not terrible but not great, keep trying</h3>
+      <img src="https://media.giphy.com/media/9QBAaVgMxMQtq/giphy.gif" class="ok-score hidden" alt="Gif of Loki making a strange face">
+      <h3 class="bad-score hidden">Your lack of useless knowledge made hulk angry</h3>
+      <img src="http://static1.squarespace.com/static/53f91163e4b0a085e8d24e89/546f4db7e4b0a19016cd3e4d/546f4dd1e4b06090ee79622f/1416580576066/83366-bruce-banner-transforms-into-h-BhDR.gif" class="bad-score hidden" alt="Gif of Bruce Banner turning into the Hulk">
+
+
+      <input type="button" value="Restart" id="play-again">
+    </div>
+     
+  </div>
+</main>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
